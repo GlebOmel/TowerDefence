@@ -10,6 +10,7 @@ public class WaveSpawn : MonoBehaviour
     public float startTime;
     public Transform spawnPoint;
     int enemyCount = 0;
+    public Transform[] WayPoints;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +20,12 @@ public class WaveSpawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (enemyCount = WaveSize) CancelInvoke("Spawn");
+        if (enemyCount == WaveSize) CancelInvoke("Spawn");
     }
     void Spawn()
     {
         enemyCount++;
         GameObject enemy = GameObject.Instantiate(EnemyPrefab, spawnPoint.position, Quaternion.identity) as GameObject;
+        enemy.GetComponent<MOveToThePoint>().waypoints = WayPoints;
     }
 }
