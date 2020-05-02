@@ -55,7 +55,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\BaseHp.cs" />
+     <Compile Include="Assets\Script\Bullet.cs" />
+     <Compile Include="Assets\Script\GameController.cs" />
+     <Compile Include="Assets\Script\Hpbar.cs" />
      <Compile Include="Assets\Script\MOveToThePoint.cs" />
+     <Compile Include="Assets\Script\MainMenu.cs" />
+     <Compile Include="Assets\Script\Pointmanager.cs" />
+     <Compile Include="Assets\Script\Scorescr.cs" />
+     <Compile Include="Assets\Script\ShopItemscr.cs" />
+     <Compile Include="Assets\Script\Shopscr.cs" />
      <Compile Include="Assets\Script\Tower.cs" />
      <Compile Include="Assets\Script\TowerPlace.cs" />
      <Compile Include="Assets\Script\TowerTrigger.cs" />
