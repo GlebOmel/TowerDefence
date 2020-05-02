@@ -29,7 +29,10 @@ public class ShopItemscr : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     }
     public void OnPointerExit(PointerEventData eventData)
     {
-        GetComponent<Image>().color = BaseColor;
+        if (gc.IndexTowerPurchased != Index)
+        {
+            GetComponent<Image>().color = BaseColor;
+        }
     }
     public void OnPointerClick(PointerEventData eventData)
     {

@@ -249,8 +249,10 @@ MonoBehaviour:
   TowerLogo: {fileID: 1555997566040868736}
   TowerName: {fileID: 3729445214047867992}
   TowerPrice: {fileID: 5594512370585177893}
-  BaseColor: {r: 0, g: 0, b: 0, a: 0.54509807}
+  BaseColor: {r: 1, g: 1, b: 1, a: 0.39215687}
   SelectColor: {r: 0.2830189, g: 0.21226417, b: 0.21226417, a: 0.54509807}
+  gc: {fileID: 0}
+  Index: 0
 --- !u!1 &6295187057605184703
 GameObject:
   m_ObjectHideFlags: 0
